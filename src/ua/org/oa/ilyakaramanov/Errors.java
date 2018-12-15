@@ -17,11 +17,10 @@ public class Errors {
 
     void illegalArgument() {
         String test = "test";
-        Array.getBoolean(test, 1);
-        try {
-
-        } catch (IllegalArgumentException ex) {
-            System.out.println("Задание 2. Недопустимый аргумент");
+         try {
+             Array.getBoolean(test, 1);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Method arrayIndex: " + e);
         }
     }
 
