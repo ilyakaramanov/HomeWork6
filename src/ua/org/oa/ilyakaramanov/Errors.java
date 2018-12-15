@@ -20,7 +20,7 @@ public class Errors {
          try {
              Array.getBoolean(test, 1);
         } catch (IllegalArgumentException e) {
-            System.out.println("Method arrayIndex: " + e);
+            System.out.println("Method illegalArgument: " + e);
         }
     }
 
