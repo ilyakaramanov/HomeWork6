@@ -6,15 +6,15 @@ public class Main {
 
         Errors errors = new Errors();
 
-        //  errors.arrayIndex();
+        errors.arrayIndex();
         errors.illegalArgument();
-        //  errors.classCast();
-        //  errors.stringIndex();
-        //  errors.nullPoiter1();
-        //  errors.nullPoiter2();
-        //  errors.nullPoiter3();
-        //  errors.stackOverflow();
-        //  errors.numberFormat();
-        //  errors.outOfMemory();
+        errors.classCast();
+        errors.stringIndex();
+        errors.nullPoiter1();
+        errors.nullPoiter2();
+        errors.nullPoiter3();
+        errors.stackOverflow();
+        errors.numberFormat();
+        errors.outOfMemory();
     }
 }

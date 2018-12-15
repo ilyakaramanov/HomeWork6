@@ -1,8 +1,8 @@
 package ua.org.oa.ilyakaramanov;
 
-
+import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Hashtable;
+
 
 public class Errors {
 
@@ -15,8 +15,14 @@ public class Errors {
         }
     }
 
-    void illegalArgument(){
+    void illegalArgument() {
+        String test = "test";
+        Array.getBoolean(test, 1);
+        try {
 
+        } catch (IllegalArgumentException ex) {
+            System.out.println("Задание 2. Недопустимый аргумент");
+        }
     }
 
     void classCast() {
