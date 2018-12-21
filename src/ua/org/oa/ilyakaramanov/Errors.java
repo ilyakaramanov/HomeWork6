@@ -3,9 +3,15 @@ package ua.org.oa.ilyakaramanov;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+/*
+Класс демонстрирует возникновение ошибок
+ */
 
 public class Errors {
 
+    /*
+    Метод демонстрирует ошибку ArrayIndexOutOfBoundsException
+     */
     void arrayIndex() {
         String[] test = new String[0];
         try {
@@ -15,15 +21,21 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку IllegalArgumentException
+     */
     void illegalArgument() {
         String test = "test";
-         try {
-             Array.getBoolean(test, 1);
+        try {
+            Array.getBoolean(test, 1);
         } catch (IllegalArgumentException e) {
             System.out.println("Method illegalArgument: " + e);
         }
     }
 
+    /*
+    Метод демонстрирует ошибку ClassCastException
+     */
     void classCast() {
         Object test = new Double(11.1);
         try {
@@ -33,6 +45,9 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку StringIndexOutOfBoudException
+     */
     void stringIndex() {
         String test = "abc";
         try {
@@ -42,6 +57,9 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку NullPointerException
+     */
     void nullPoiter1() {
         Main main = null;
         try {
@@ -51,6 +69,9 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку NullPointerException
+     */
     void nullPoiter2() {
         String test = null;
         try {
@@ -60,6 +81,9 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку NullPointerException
+     */
     void nullPoiter3() {
         String[] test = new String[5];
         try {
@@ -69,6 +93,9 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку StackOverflowError
+     */
     void stackOverflow() {
         try {
             stackOverflow();
@@ -78,6 +105,9 @@ public class Errors {
 
     }
 
+    /*
+    Метод демонстрирует ошибку NumberFormatException
+     */
     void numberFormat() {
         try {
             int a = Integer.parseInt(null);
@@ -86,6 +116,9 @@ public class Errors {
         }
     }
 
+    /*
+    Метод демонстрирует ошибку OutOfMemoryError
+     */
     void outOfMemory() {
         ArrayList<String> list = new ArrayList<>();
         try {

@@ -1,10 +1,13 @@
 package ua.org.oa.ilyakaramanov;
 
+/*
+Класс запускает методы класса Errors
+ */
 public class Main {
 
     public static void main(String[] args) {
 
-        Errors errors = new Errors();
+        Errors errors = new Errors();       //создаю объект класса Errors
 
         errors.arrayIndex();
         errors.illegalArgument();
